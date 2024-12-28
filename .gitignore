@@ -1,0 +1,29 @@
+# Virtual environments
+venv/
+env/
+
+# Python cache files
+*.pyc
+__pycache__/
+
+# Database files
+*.sqlite3
+
+# Logs
+*.log
+
+# Static and media files (optional, unless managed via version control)
+staticfiles/
+media/
+
+# Environment variables
+.env
+
+# IDE settings
+.idea/
+.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
