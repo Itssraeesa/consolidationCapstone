@@ -1,6 +1,12 @@
 from django.db import models
 
-# Create your models here.
+"""
+This file contains the database models for the application.
+
+Models define the structure of the database tables and provide an interface to interact
+with the database using Django's ORM (Object-Relational Mapping).
+"""
+
 class Song(models.Model):
     """
     A model to represent a song in the music catalog.
@@ -18,8 +24,7 @@ class Song(models.Model):
         """
         Return a string representation of the Song instance, which is its title.
 
-        Returns:
-        str: The title of the song.
+        :returns: The title of the song.
+        :rtype: str
         """
         return self.title
-

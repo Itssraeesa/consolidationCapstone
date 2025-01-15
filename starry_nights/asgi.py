@@ -1,10 +1,11 @@
 """
-ASGI config for starry_nights project.
+This method will be used to configure ASGI for the Starry Nights project.
 
-It exposes the ASGI callable as a module-level variable named ``application``.
+    :param os.environ: The environment variable to set the Django settings module
 
-For more information on this file, see
-https://docs.djangoproject.com/en/5.1/howto/deployment/asgi/
+    :returns: The ASGI application callable for the project
+
+    :rtype: ASGI application
 """
 
 import os
@@ -14,3 +15,4 @@ from django.core.asgi import get_asgi_application
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'starry_nights.settings')
 
 application = get_asgi_application()
+

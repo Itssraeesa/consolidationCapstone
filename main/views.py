@@ -3,37 +3,37 @@ from .models import Song
 
 def home(request):
     """
-    Renders the home page of the website.
+    This method will be used to render the home page of the website
 
-    Args:
-        request: The HTTP request object.
+        :param request: The HTTP request object
 
-    Returns:
-        HttpResponse: The rendered home page.
+        :returns: The rendered home page
+
+        :rtype: HttpResponse
     """
     return render(request, 'main/home.html')
 
 def about(request):
     """
-    Renders the about page of the website.
+    This method will be used to render the about page of the website
 
-    Args:
-        request: The HTTP request object.
+        :param request: The HTTP request object
 
-    Returns:
-        HttpResponse: The rendered about page.
+        :returns: The rendered about page
+
+        :rtype: HttpResponse
     """
     return render(request, 'main/about.html')
 
 def songs(request):
     """
-    Retrieves all the songs from the database and renders the songs page.
+    This method will be used to retrieve all the songs from the database and render the songs page
 
-    Args:
-        request: The HTTP request object.
+        :param request: The HTTP request object
 
-    Returns:
-        HttpResponse: The rendered songs page with a list of songs.
+        :returns: The rendered songs page with a list of songs
+
+        :rtype: HttpResponse
     """
     songs = Song.objects.all()
     return render(request, 'main/songs.html', {'songs': songs})
