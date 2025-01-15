@@ -4,7 +4,7 @@ This is a Dockerized Django application. Follow the steps below to get the proje
 ## Prerequisites
 Ensure you have Docker installed on your machine. If you don't, you can follow the Docker installation guide for your operating system.
 Steps to Start the Project
-
+you can see docker installation guide here(#https://docs.docker.com/docker-hub/quickstart/)
 ### 1. Clone the Repository
 First, clone the repository to your local machine:
 `git clone https://github.com/Itssraeesa/consolidationCapstone.git` 
